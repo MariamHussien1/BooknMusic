@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".UserMain">
+
+    <TextView
+        android:id="@+id/MainT"
+        android:layout_width="359dp"
+        android:layout_height="127dp"
+        android:layout_marginTop="70dp"
+        android:layout_marginBottom="62dp"
+        android:gravity="center"
+        android:text="Start the Journey!"
+        android:textAlignment="center"
+        android:textSize="48sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/bookb"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/bookb"
+        android:layout_width="340dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="52dp"
+        android:layout_marginEnd="52dp"
+        android:layout_marginBottom="25dp"
+        android:text="Add and Explore Books"
+        app:layout_constraintBottom_toTopOf="@+id/songb"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/MainT" />
+
+    <Button
+        android:id="@+id/songb"
+        android:layout_width="340dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="52dp"
+        android:layout_marginEnd="52dp"
+        android:layout_marginBottom="25dp"
+        android:text="Add and Explore Songs"
+        app:layout_constraintBottom_toTopOf="@+id/saved"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bookb" />
+
+    <Button
+        android:id="@+id/logout"
+        android:layout_width="340dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="52dp"
+        android:layout_marginEnd="52dp"
+        android:layout_marginBottom="80dp"
+        android:text="LogOut"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/saved" />
+
+    <Button
+        android:id="@+id/saved"
+        android:layout_width="340dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="52dp"
+        android:layout_marginEnd="52dp"
+        android:layout_marginBottom="25dp"
+        android:text="Saved"
+        app:layout_constraintBottom_toTopOf="@+id/logout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.504"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/songb" />
+</androidx.constraintlayout.widget.ConstraintLayout>
